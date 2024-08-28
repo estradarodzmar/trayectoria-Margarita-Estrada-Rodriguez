@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <!-- Metadatos -->
+     <meta charset="utf-8">
+     <meta name="author" content="Margarita Estrada Rodriguez">
+     <meta name="description" content="Portafolio web de trayectoria Margarita Estrada">
+     <meta name="keywords" content="HTML, CSS, JavaScript, Trayectoria, Formación, Habilidades, Premios, Experiencia, Voluntariados">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Título -->
+    <title>Margarita Estrada Rodriguez | Trayectoria</title>
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <!-- Iconos de Bootstrap -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <!-- CSS -->
+   <link href="style.css" rel="stylesheet">
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.google.com/share?selection.family=Edu+VIC+WA+NT+Beginner:wght@400..700" rel="stylesheet">
+ </head>
+ <body>
+      <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-custom">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#sobre-mi">Sobre mí</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="#galeria">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#testimonios">Testimonios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contactos</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto.png" alt="Foto de Margarita Estrada Rodriguez">
+        <h1>Margarita Estrada Rodriguez</h1>
+        <!--<h2>Desarrollo sitios web y escribo artículos programación.</h2>-->
+
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Margarita Estrada Rodriguez</h2>
+        <p class="seccion-texto">Soy una profesional apasionada por la tecnología, la educación  y  el arte. Mi formación académica, habilidades, y experiencias me han permitido contribuir en diversos proyectos y voluntariados tanto a nivel nacional como internacional, siempre buscando crecer y aprender más cada día.</p>
+      </div>
+    </section>
+
+
+
+
+
+<!-- Experiencia -->
+
+<section class="experiencia seccion-clara">
+  <div id="experienciaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner container text-center">
+      <div class="carousel-item active">
+        <div class="row">
+          <!-- Formación Académica -->
+          <div class="columna col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-mortarboard"></i>
+                <p class="experiencia-titulo">Formación Académica</p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalFormacionAcademica">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Formación Extracurricular -->
+          <div class="columna col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-journal-code"></i>
+                <p class="experiencia-titulo">Formación Extracurricular</p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalFormacionExtra">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Premios -->
+          <div class="columna col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-trophy"></i>
+                <p class="experiencia-titulo">Premios</p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalPremios">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <!-- Habilidades -->
+          <div class="columna col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-lightbulb"></i>
+                <p class="experiencia-titulo">Habilidades</p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalHabilidades">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Experiencia Laboral y Voluntariados -->
+          <div class="columna col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-briefcase"></i>
+                <p class="experiencia-titulo">Experiencia Laboral y Voluntariados</p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalExperienciaLaboral">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Hobbies -->
+          <div class="columna col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <i class="bi bi-activity"></i>
+                <p class="experiencia-titulo">Hobbies</p>
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalHobbies">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#experienciaCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#experienciaCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Modales -->
+<!-- Modal Formación Académica -->
+<div class="modal fade" id="modalFormacionAcademica" tabindex="-1" aria-labelledby="modalFormacionAcademicaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalFormacionAcademicaLabel">Formación Académica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Bachillerato SABES VICARIO</strong><br>
+          • Graduada de excelencia<br> Bachillerato general (media superior)</p>
+        <p><strong>Universidad SABES UNIDEG</strong><br>
+          • Estudiando actualmente<br> Ingeniería en Tecnologías de la Información</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Formación Extracurricular -->
+<div class="modal fade" id="modalFormacionExtra" tabindex="-1" aria-labelledby="modalFormacionExtraLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalFormacionExtraLabel">Formación Extracurricular</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="badges-contenedor">
+          <span class="badge text-bg-primary">Computación | Lasser Beam Apaseo</span>
+          <span class="badge text-bg-primary">Oratoria | UNAM | 2020</span>
+          <span class="badge text-bg-primary">Huella digital | Fundación BBVA</span>
+          <span class="badge text-bg-primary">Internet de las cosas | SCT/CID</span>
+          <span class="badge text-bg-primary">TECNOLOCHICAS</span>
+          <span class="badge text-bg-primary">Liderazgo | TEC MTY</span>
+          <span class="badge text-bg-primary">Manejo del estrés | UNAM</span>
+          <span class="badge text-bg-primary">Herramientas tecnológicas | UNAM</span>
+          <span class="badge text-bg-primary">IA | GOOGLE ACADEMY</span>
+          <span class="badge text-bg-primary">Ciencia de datos | STANFORD</span>
+          <span class="badge text-bg-primary">Docente digital | Anáhuac</span>
+          <span class="badge text-bg-primary">Leading in a Remote Environment | Harvard</span>
+          <span class="badge text-bg-primary">Diseño UX/UI | EDX</span>
+          <span class="badge text-bg-primary">Docencia y tutoría | Fundación MM</span>
+          <span class="badge text-bg-primary">Marketing | Telefónica</span>
+          <span class="badge text-bg-primary">Inteligencia Artificial | SANTANDER</span>
+          <span class="badge text-bg-primary">Transformación digital | SANTANDER</span>
+          <span class="badge text-bg-primary">TECNOLOCHICAS PRO </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Premios -->
+<div class="modal fade" id="modalPremios" tabindex="-1" aria-labelledby="modalPremiosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPremiosLabel">Premios</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Medalla plata OCI GTO | 2017</p>
+        <p>Mención honorífica OFMI | 2023</p>
+        <p>Reconocimiento a la excelencia académica SABES | 2023</p>
+        <p>Insignia mentores juveniles | 2023</p>
+        <p>Insignia embajadoras CET | 2024</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Habilidades -->
+<div class="modal fade" id="modalHabilidades" tabindex="-1" aria-labelledby="modalHabilidadesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalHabilidadesLabel">Habilidades</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="badges-contenedor">
+          <span class="badge text-bg-primary">Redaccion</span>
+          <span class="badge text-bg-primary">Front end</span>
+          <span class="badge text-bg-primary">Liderazgo</span>
+          <span class="badge text-bg-primary">Desarrollo Web</span>
+          <span class="badge text-bg-primary">Diseño de Apps</span>
+          <span class="badge text-bg-primary">Robótica</span>
+          <span class="badge text-bg-primary">Inteligencia Artificial</span>
+          <span class="badge text-bg-primary">Manejo de Estrés</span>
+          <span class="badge text-bg-primary">Herramientas Tecnológicas</span>
+          <span class="badge text-bg-primary">Ciencia de Datos</span>
+          <span class="badge text-bg-primary">UX/UI</span>
+          <span class="badge text-bg-primary">Mentoría</span>
+          <span class="badge text-bg-primary">Transformación Digital</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Experiencia Laboral y Voluntariados -->
+<div class="modal fade" id="modalExperienciaLaboral" tabindex="-1" aria-labelledby="modalExperienciaLaboralLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalExperienciaLaboralLabel">Experiencia Laboral y Voluntariados</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Docente</strong><br> Impartición de cursos a niñas de 12 a 17 años sobre Diseño web, desarrollo de apps, robótica, IA<br> TECNOLOCHICAS MX, SEP 2023 - Presente</p>
+        <p><strong>COORDINADORA</strong><br> Coordinadora Municipal de red de liderazgo enfocada en el ámbito educativo en el municipio de APASEO EL GDE<br> Red INDEx | JUVENTUDESGTO, Ene 2024 - Presente</p>
+        <p><strong>Mentora</strong><br> Mentoría a concursantes y diseño de problemas para OFMI<br> OFMI | OMEGAUP!, Ago 2023 - Presente</p>
+        <p><strong>Prestación de servicios de mentoría</strong><br> SEP 2020 - Presente</p>
+        <p><strong>Embajadora</strong><br> Embajadora de tecnología en el Chicas en tecnología Argentina<br> CET ARGENTINA, Mar 2024 - Presente</p>
+        <p><strong>Participación como PONENTE en Conferencias</strong></p>
+        <p>Protagonistas del futuro: creación de tecnología con impacto social | CET</p>
+        <p>Equidad de género en la era digital | FEMPODER</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Hobbies -->
+<div class="modal fade" id="modalHobbies" tabindex="-1" aria-labelledby="modalHobbiesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalHobbiesLabel">Hobbies</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="badges-contenedor">
+          <span class="badge text-bg-primary">Pintura</span>
+          <span class="badge text-bg-primary">Dibujo</span>
+          <span class="badge text-bg-primary">Fotografía</span>
+          <span class="badge text-bg-primary">Tecnología</span>
+          <span class="badge text-bg-primary">Educación</span>
+          <span class="badge text-bg-primary">Voluntariado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!-- Proyectos -->
+    <section id="galeria" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Galeria</h2>
+      <h3 class="seccion-descripcion">Cada proyecto es una manifestación de mi compromiso con la tecnología, la enseñanza y  el aprendizaje.</h3>
+       <!-- Galeria  -->
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+      <!-- Proyecto 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/juventud.jpeg" alt="PMJAG ">
+          <div class="overlay">
+            <p>Premio a la juventud 2023</p>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/talleres.jpeg" alt=" talleres index">
+          <div class="overlay">
+            <p> Conferencia "FORMADORES DE GRANDEZA" | red INDEx</p>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/ponente.jpeg" alt=" foro constancia">
+          <div class="overlay">
+            <p> Conferencia "EQUIDAD DE GENERO EN LA ERA DIGITAL"</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Proyecto 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/ux.jpeg" alt=" diseño ux">
+          <div class="overlay">
+            <p> Diseño de app educativa </p>
+          </div>
+        </div>
+      </div>
+       <!-- Proyecto 4 -->
+       <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/excelencia.jpeg" alt="Proyecto 4">
+          <div class="overlay">
+            <p> Merito academico estatal 2023</p>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/certificado de embajadora.jpeg" alt=" embajadora certificado">
+          <div class="overlay">
+            <p>Certificacion embajadora CET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios sobre mi trayectoria</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Pau_coto.jpeg" alt="Foto de PAULA COTO">
+              <p class="testimonio-texto">Conocí a Margarita como estudiante del programa “Conectadas” impulsado por la Asociación Civil
+                Chicas en Tecnología. Desde entones,
+                demostró ser una profesional, dedicada y comprometida con la ampliación de oportunidades de las
+                mujeres en las áreas de ciencia y tecnología.
+              Ahora, como embajadora CET, a sido inspiracion para muchas niñas y jovenes latinoamericanas, compartiendo sus conocimientos y trayectoria.</p>
+              <div class="testimonio-info">
+                <p class="cliente">MSc. Paula Coto</p>
+                <p class="cargo">Directora Ejecutiva
+                  Chicas en Tecnología</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/andrea.jpeg" alt="Foto de Andrea Santillana">
+              <p class="testimonio-texto"> A raiz de su destacada participacion en la OFMI, actualmente forma parte del equipo de omegaUp que organiza 
+                este concurso como mentora. Este
+                nombramiento representa una responsabilidad importante que asumió con entusiasmo y
+                dedicación.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Andrea Santillana Fernández</p>
+                <p class="cargo">Directora de la Olimpiada Femenil Mexicana de Informática</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/atenas franco.jpeg" alt="Foto de Atenas Franco">
+              <p class="testimonio-texto">Margarita, demostrado ser una estudiante excepcional, destacándose por su dedicación, compromiso y actitud positiva hacia el aprendizaje. Su rendimiento académico es consistente y sobresaliente, y su capacidad para trabajar en equipo y apoyar a sus compañeros es admirable. Siempre está dispuesta a enfrentar nuevos desafíos con entusiasmo y perseverancia, lo que la convierte en un ejemplo a seguir para sus compañeros. Estoy segura de que  continuará alcanzando grandes logros en el futuro</p>
+              <div class="testimonio-info">
+                <p class="cliente">Atenas Franco</p>
+                <p class="cargo">Mentora de TECNOLOCHICAS PRO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+<section id="contacto" class="contacto seccion-oscura">
+  <div class="container">
+    <div class="container text-center rectangulo d-flex justify-content-evenly">
+      <div class="row">
+        <div class="col-12 col-md-4 seccion-titulo">
+          ¡Hablemos!
+        </div>
+        <div class="col-12 col-md-4 descripcion">
+          Estoy aquí para ayudarte con el desarrollo de tus proyectos digitales, ofrecerte mentoría en tecnología, explorar colaboraciones innovadoras, o participar en conferencias y talleres. Si compartes mi pasión por la educación y la tecnología, no dudes en ponerte en contacto conmigo. ¡Hablemos y hagamos realidad tus ideas!
+
+
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="mailto:margaritaestradardz@gmail.com">
+            <button type="button">  
+              Contacto
+              <i class="bi bi-envelope-check-fill"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pie de pagina (footer) -->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+  <img class="footer-logo" src="imagenes/icono.png" alt="Logo del portafolio">
+  <p class="footer-texto text-center">Cada día es una nueva oportunidad para crear. <br>¿Listo para colaborar y transformar tu visión en realidad?</p>
+  <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    <a href="https://www.facebook.com/maggyEsSv?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/margarita-estrada-b5664127a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/ma_ggys?igsh=MXJpdnV2dzBuMXV5ZA==" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="mailto:margaritaestradardz@gmail.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-envelope"></i>
+    </a>
+  </div>
+  <div class="derechos-de-autor">Creado por Margarita Estrada Rodriguez (2024) &#169;</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Typewriter Effect JS -->
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<!-- Custom JS -->
+<script src="main.js"></script>
+
+</body>
+</html>
